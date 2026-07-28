@@ -8,19 +8,6 @@ Subject: [PATCH 3/3] fix: build
  pom.xml                     | 4 ----
  2 files changed, 2 insertions(+), 5 deletions(-)
 
-diff --git a/.github/workflows/maven.yml b/.github/workflows/maven.yml
-index fe1f9d7..17043c3 100644
---- a/.github/workflows/maven.yml
-+++ b/.github/workflows/maven.yml
-@@ -53,4 +53,5 @@ jobs:
-           files: ${{ steps.jar.outputs.path }}
-           generate_release_notes: true
-         env:
--          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-\ No newline at end of file
-+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-+          
-\ No newline at end of file
 diff --git a/pom.xml b/pom.xml
 index 469498a..e31d446 100644
 --- a/pom.xml
@@ -38,4 +25,3 @@ index 469498a..e31d446 100644
              <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
 -- 
 2.47.3
-
